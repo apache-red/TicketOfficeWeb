@@ -22,7 +22,7 @@ public class SQLStationDAO implements StationDAO {
     private static final String ADD_NEW_ROUTE_SQL = "INSERT INTO route (name) VALUES (?)";
     private static final String ADD_NEW_STATION_SQL = "INSERT INTO station (id_route, name) VALUES (?,?)";
     private static final String GET_STATION_SQL = "SELECT * FROM station WHERE id_station=?";
-    private static final String GET_STATIONS_OF_ROUTE_SQL = "SELECT * FROM station WHERE id_station=?";
+    private static final String GET_STATIONS_OF_ROUTE_SQL = "SELECT * FROM station WHERE id_route=?";
     private static final String REMOVE_STATION_SQL = "DELETE FROM station WHERE id_station=?";
     private static final String EDIT_PSTATION_SQL = "UPDATE station SET name=? WHERE id_station=?";
 

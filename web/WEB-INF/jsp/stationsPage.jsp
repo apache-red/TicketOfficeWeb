@@ -12,9 +12,9 @@
 <fmt:setLocale value="${sessionScope.local}" />
 <fmt:setBundle basename="by.htp.ticketoffice.localization.local" var="loc" />
 <fmt:message bundle="${loc}" key="local.errorAddRoute" var="errorAddRoute" />
-<fmt:message bundle="${loc}" key="local.nameOfEditRoute" var="nameOfEditRoute" />
-<fmt:message bundle="${loc}" key="local.nameOfDeleteRoute" var="nameOfDeleteRoute" />
-<fmt:message bundle="${loc}" key="local.nameOfAddNewRoute" var="nameOfAddNewRoute" />
+<fmt:message bundle="${loc}" key="local.nameOfEditStation" var="nameOfEditStation" />
+<fmt:message bundle="${loc}" key="local.nameOfDeleteStation" var="nameOfDeleteStation" />
+<fmt:message bundle="${loc}" key="local.nameOfAddNewStation" var="nameOfAddNewStation" />
 <fmt:message bundle="${loc}" key="local.addRoute1" var="addRoute1" />
 <fmt:message bundle="${loc}" key="local.addRoute2" var="addRoute2" />
 </head>
@@ -40,8 +40,8 @@
 			<c:forEach items="${applicationScope.allRoutes}" var="route_i">
 				<tr>
 					<td><h2><c:out value="${route_i.name}" /></h2></td>
-					<td><mytag:getstationsforadmin route="${route_i}" nameedit="${nameOfEditRoute}"
-					namedelete="${nameOfDeleteRoute}" nameadd="${nameOfAddNewRoute}" /></td>
+					<td><mytag:getstationsforadmin route="${route_i}" nameedit="${nameOfEditStation}"
+					namedelete="${nameOfDeleteStation}" nameadd="${nameOfAddNewStation}" /></td>
 				</tr>
 			</c:forEach>
 		</table><br/>

@@ -20,6 +20,7 @@
 <jsp:setProperty property="*" name="station" />
 
 <h1><jsp:getProperty property="name" name="station" /></h1>
+
 <table class="table2">
     <tr>
         <td>${idNumberOfStation}:</td>

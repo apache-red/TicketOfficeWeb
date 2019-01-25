@@ -23,7 +23,6 @@
     <font color="#CC0000"> ${errorAddOrEditStation1} </font>
 </c:if>
 
-
 <form action="controller" method="post">
     <input type="hidden" name="command" value="add_new_station" />
     <table width="50%">

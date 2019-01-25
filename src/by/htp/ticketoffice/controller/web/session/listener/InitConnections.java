@@ -35,7 +35,7 @@ public class InitConnections implements ServletContextListener {
 			e.printStackTrace();
 		}
 		ServletContext application = contextEvent.getServletContext();
-		application.setAttribute("allCategories", routeList);
+		application.setAttribute("allRoutes", routeList);
 
 	}
 

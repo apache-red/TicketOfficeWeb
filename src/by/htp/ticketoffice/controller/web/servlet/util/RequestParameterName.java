@@ -29,6 +29,7 @@ public class RequestParameterName {
 	public static final String ADMIN = "admin";
 	public static final String ERROR_AUTHORIZATION = "errorAuthorization";
 	public static final String CLIENT = "client";
+
 	public static final String NUMBER_OF_INSTANCES = "number_of_instances";
 	public static final String ERROR_ORDER = "errorOrder";
 	public static final String CLIENTS = "clients";
